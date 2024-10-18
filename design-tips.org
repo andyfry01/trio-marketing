@@ -1,0 +1,29 @@
+* Golden Ratio (1:1.618):
+Use this ratio for layout proportions. For example, if your content area is 1000px wide, your sidebar could be 618px.
+
+* Rule of Thirds:
+Divide your layout into a 3x3 grid. Place key elements along these lines or at their intersections for balanced composition.
+
+* 60-30-10 Color Rule:
+Use your primary color for 60% of the design, secondary color for 30%, and accent color for 10%.
+
+* F-Pattern Layout:
+Arrange important content along an F-shaped pattern, as this mimics typical web reading patterns.
+
+* Whitespace (Negative Space):
+Aim for a content-to-whitespace ratio of about 40:60. This improves readability and focuses attention on your content.
+
+* Typography Hierarchy:
+Use a scale like 1:1.5 for your type sizes. If your body text is 16px, your h1 could be 24px (16 * 1.5).
+
+* Responsive Design:
+Design with a mobile-first approach. Use common breakpoints: 480px, 768px, 1024px, and 1200px.
+
+* Page Load Speed:
+Aim for a load time under 3 seconds. Optimize images and minimize HTTP requests.
+
+* Contrast Ratio:
+For accessibility, maintain a minimum contrast ratio of 4.5:1 between text and background colors.
+
+* Call-to-Action (CTA) Prominence:
+Make CTAs 20% larger than your regular content to draw attention. Place them in the top 25% of the page for visibility.

@@ -1,0 +1,135 @@
+:root {
+    --primary: #3A5AE2;
+    --secondary: #BFD7EA;
+    --accent: #EFA00B;
+    --text: #071108;
+    --not-quite-white: #FEFEFE;
+
+    --golden-r: 1.618;
+}
+
+* {
+    font-size: 16px;
+}
+
+button:focus, a:focus, input:focus {
+    outline: calc(var(--size-1) / 1.5) solid var(--accent);
+    outline-offset: var(--size-0);
+}
+
+
+body {
+    background: var(--not-quite-white);
+}
+
+h1, h2, h3 {
+    margin-block: var(--scale-1);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    margin-block: var(--size-10);
+}
+
+.logo__image {
+    width: var(--scale-fluid-9);
+}
+
+h2, h3, p, span, button {
+    font-family: "Helvetica";
+    font-optical-sizing: auto;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.logo__title {
+    font-size: var(--scale-fluid-7);
+    font-weight: 500;
+    font-style: normal;
+    color: var(--text);
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: var(--not-quite-white);
+    grid-column: 2/3;
+
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto var(--prose-xl) auto;
+}
+
+header, main, footer {
+    grid-column: 2/3;
+    grid-row: auto;
+}
+
+.graphic-l,.graphic-r {
+    background: url("./svg-bg-alt.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: calc(calc(var(--golden-r) * 1) * var(--scale-9));
+}
+
+
+.graphic-l {
+    background-origin: border-box;
+    --animate-delay: 1200ms;
+    --animate-duration: 3s;
+}
+
+.graphic-r {
+    transform: scaleX(-100%);
+    --animate-delay: 200ms;
+    --animate-duration: 2s;
+}
+
+
+
+/* Optional */
+main {
+    margin: 0 auto;
+    max-width: 80ch;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+ul li:before
+{
+    content: '\25B7';
+    margin: 0 1em;    /* any design */
+    color: var(--primary);
+}
+
+section {
+    margin-block: var(--scale-5);
+}
+
+.copyright {
+    margin-top: var(--scale-5);
+    padding-bottom: var(--scale-5);
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.footer__links li {
+    margin-right: var(--scale-2);
+}
