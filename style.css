@@ -133,3 +133,7 @@ section {
 .footer__links li {
     margin-right: var(--scale-2);
 }
+
+.margin-sm {
+    margin-block: var(--scale-1);
+}
