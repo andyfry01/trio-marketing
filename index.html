@@ -31,11 +31,11 @@
     <link rel="canonical" href="https://www.triomrr.com">
 
     <!-- CSS -->
-
     <!-- Get rid of this when self-hosting gets figured out -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <link href="https://unpkg.com/pollen-css@5.0.1/dist/pollen.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -80,7 +80,7 @@
 
         <main>
             <section id="product-description">
-                <h2>Awesome Med Regimen Reviews</h2>
+                <h2>Meeting the needs of today's consultant pharmacists</h2>
                 <p class="margin-sm">TrioMRR is modern, cloud-based software, which solves many problems right at the start. For example:</p>
                 <ul class="margin-sm">
                     <li><strong>Your stored data meets HIPAA compliance.</strong> Lost laptops are no longer a liability.</li>
@@ -93,7 +93,7 @@
                     <li>Updates can be provided incrementally and more frequently, without any angst of keeping everyone on the same version.</li>
                 </ul>
                 <p class="margin-sm">ANY computer, tablet, or mobile device with a web browser can access TrioMRR.</p>
-                <p class="margin-sm">Not sure it's a good fit? We provide a free trial so you can see for yourself how TrioMRR will make you more efficient so you can focus on your MRRs.</p>
+                <p class="margin-sm">Not sure it's a good fit? Once launched, we'd be happy to provide a free trial so you can see for yourself how TrioMRR will be your next MRR software.</p>
             </section>
 
 
@@ -103,24 +103,25 @@
 
             <section id="email-signup">
                 <h2>Stay Updated</h2>
-                <p>Sign up for our newsletter to receive the latest news and updates about TrioMRR.</p>
+                <p>Sign up for our newsletter to receive the latest news and updates about TrioMRR. You'll also be the first to know when TrioMRR has launched.</p>
                 <form action="https://sendy.triomrr.com/subscribe" method="POST" accept-charset="utf-8">
                 	<label for="name">Name</label><br/>
                 	<input type="text" name="name" id="name"/>
                 	<br/>
                 	<label for="email">Email</label><br/>
                 	<input type="email" name="email" id="email"/><br/><br/>
-                <input type="checkbox" name="gdpr" id="gdpr"/>
-                <span><strong>Marketing permission</strong>: I give my consent to  to be in touch with me via email using the information I have provided in this form for the purpose of news, updates and marketing.</span>
+                <span><strong>Marketing permission</strong>: I give my consent to be in touch with me via email using the information I have provided in this form for the purpose of news, updates and marketing.</span>
+               
                 <br/><br/>
-                <span><strong>What to expect</strong>: If you wish to withdraw your consent and stop hearing from us, simply click the unsubscribe link at the bottom of every email we send or contact us at jmloeper@triomrr.com. We value and respect your personal data and privacy.</span>
-                <br/><br/><div style="display:none;">
+                <button type="submit" name="submit" id="submit">Sign up</button>
+                <br/><br/>
+                <div style="display:none;">
+                    
                 	<label for="hp">HP</label><br/>
                 	<input type="text" name="hp" id="hp"/>
                 	</div>
                 	<input type="hidden" name="list" value="M892NdSNDDRlcbomZq5jZnSg"/>
                 	<input type="hidden" name="subform" value="yes"/>
-                	<input type="submit" name="submit" id="submit"/>
                 </form>
             </section>
 
@@ -129,7 +130,7 @@
 
 
 
-                <video width="640" height="360" poster="__POSTER__.jpg" controls="controls">
+                <video poster="__POSTER__.jpg" controls="controls">
                     <source src="https://triomrr.s3.amazonaws.com/video-intro-v1.mp4" type="video/mp4" />
                         <param name="autoplay" value="false" />
                         <param name="showlogo" value="false" />

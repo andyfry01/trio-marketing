@@ -4,12 +4,17 @@
     --accent: #EFA00B;
     --text: #071108;
     --not-quite-white: #FEFEFE;
-
     --golden-r: 1.618;
 }
 
 * {
     font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
 button:focus, a:focus, input:focus {
@@ -26,6 +31,10 @@ h1, h2, h3 {
     margin-block: var(--scale-1);
 }
 
+h2 {
+    font-size: var(--scale-3);
+}
+
 .logo {
     display: flex;
     flex-direction: row;
@@ -39,9 +48,21 @@ h1, h2, h3 {
     width: var(--scale-fluid-9);
 }
 
-h2, h3, p, span, button {
-    font-family: "Helvetica";
-    font-optical-sizing: auto;
+#submit {
+    background: var(--not-quite-white);
+    border: var(--primary);
+    border-width: var(--size-0);
+    border-radius: var(--radius-sm);
+    border-style: solid;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-inline: var(--scale-000);
+    font-size: var(--scale-2);
+}
+
+#submit:hover {
+    cursor: pointer;
 }
 
 .raleway {
@@ -62,12 +83,12 @@ h2, h3, p, span, button {
     grid-template-rows: auto 1fr auto;
     background-color: var(--not-quite-white);
     grid-column: 2/3;
-
+    margin: var(--size-3);
 }
 
 body {
     display: grid;
-    grid-template-columns: auto var(--prose-xl) auto;
+    grid-template-columns: auto min(100vw, var(--prose-xl)) auto;
 }
 
 header, main, footer {
@@ -79,6 +100,8 @@ header, main, footer {
     background: url("./svg-bg-alt.svg");
     background-repeat: no-repeat;
     background-position-x: right;
+    /* background-position-y: bottom; */
+    background-size: cover;
     background-position-y: calc(calc(var(--golden-r) * 1) * var(--scale-9));
 }
 
@@ -106,12 +129,14 @@ main {
 ul {
     list-style: none;
     padding: 0px;
+    list-style-position: outside;
+    margin-left: var(--scale-2);
 }
 
 ul li:before
 {
     content: '\25B7';
-    margin: 0 1em;    /* any design */
+    margin: 0px 10px 0px -27px;
     color: var(--primary);
 }
 
